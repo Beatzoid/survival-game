@@ -19,7 +19,6 @@ public class Player : MonoBehaviour
     private float gravityAcceleration;
     private float yVelocity;
 
-    // Start is called before the first frame update
     public void Start()
     {
         cc = GetComponent<CharacterController>();
@@ -29,7 +28,6 @@ public class Player : MonoBehaviour
         gravityAcceleration *= Time.deltaTime;
     }
 
-    // Update is called once per frame
     public void FixedUpdate()
     {
         Movement();
